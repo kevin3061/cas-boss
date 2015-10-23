@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>tv.acframework.oss</groupId>
+	<artifactId>ac-oss-boss</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>ac-oss-boss</name>
+	<url>http://mvnrepo.appleframework.com</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.version>1.0.0</project.version>
+		<boss.version>${project.version}</boss.version>
+		<ac.version>0.1.0.RELEASE</ac.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>tv.acframework</groupId>
+				<artifactId>ac-exception</artifactId>
+				<version>${ac.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<modules>
+		<module>ac-oss-boss-core</module>
+		<module>ac-oss-boss-server</module>
+	</modules>
+
+	<!-- 本地私服
+	<repositories>
+		<repository>
+			<id>acfun nexus</id>
+			<url>http://nexus.acfun.tv/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories> -->
+	
+	<distributionManagement>
+		<repository>
+			<id>ac-releases</id>
+			<name>Apple Releases Repository</name>
+			<url>http://mvnrepo.appleframework.com/nexus/content/repositories/releases</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>ac-snapshots</id>
+			<name>Apple Snapshots Repository</name>
+			<url>http://mvnrepo.appleframework.com/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
