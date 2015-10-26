@@ -191,7 +191,6 @@ public class DateUtil {
 	 * 将Date转换成yyyy-MM-dd的字符串
 	 * 
 	 * @param date
-	 * @param formatStr
 	 * @return
 	 */
 	public static String getDateString(Date date) {
@@ -578,9 +577,7 @@ public class DateUtil {
 	/**
 	 * 根据Calendar对象、字符串日期类型获得字符串日期
 	 * 
-	 * @param date
 	 *            Calendar对象
-	 * @param strDatetype
 	 *            字符串日期类型（1：XXXX年XX月XX日，2：XX月XX日，3，XXXX年，4：XXXX-XX-XX，5：XX-XX，6：
 	 *            XXXX）
 	 * 
@@ -631,7 +628,6 @@ public class DateUtil {
 	 * @param protoDate
 	 *            原来的时间（java.util.Date）
 	 * 
-	 * @param dateOffset
 	 *            （向前移正数，向后移负数）
 	 * 
 	 * @return 时间（java.util.Date）
@@ -918,7 +914,6 @@ public class DateUtil {
 	/**
 	 * 增加一个月
 	 * 
-	 * @param s
 	 * @param n
 	 * @return
 	 */
@@ -937,7 +932,6 @@ public class DateUtil {
 	/**
 	 * 增加一个月
 	 * 
-	 * @param s
 	 * @param n
 	 * @return
 	 */
