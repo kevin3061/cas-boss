@@ -11,6 +11,7 @@
 	<artifactId>ac-oss-boss-server</artifactId>
 	<name>ac-oss-boss-server</name>
 	<url>http://mvnrepo.appleframework.com</url>
+	<packaging>war</packaging>
 	
 	<properties>
 		<ac.version>0.1.0.RELEASE</ac.version>
@@ -113,7 +114,12 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		 
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
 	</dependencies>
 	
 	<build>
@@ -268,7 +274,7 @@
 		    
 	</build>
 
-	<!-- 本地私服 -->
+	<!-- 本地私服
 	<repositories>
 		<repository>
 			<id>acfun nexus</id>
@@ -281,6 +287,6 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-	</repositories>
-	
+	</repositories> -->
+
 </project>

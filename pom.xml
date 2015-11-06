@@ -32,7 +32,7 @@
 		<module>ac-oss-boss-server</module>
 	</modules>
 
-	<!-- 本地私服
+	<!-- 本地私服 -->
 	<repositories>
 		<repository>
 			<id>acfun nexus</id>
@@ -45,7 +45,7 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-	</repositories> -->
+	</repositories>
 	
 	<distributionManagement>
 		<repository>

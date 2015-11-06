@@ -10,11 +10,17 @@
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"
 	default-lazy-init="true">
 
+
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="${jdbc.driver}" />
 		<property name="jdbcUrl" value="${jdbc.url}" />
 		<property name="user" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
+<!--
+		<property name="jdbcUrl" value="jdbc:mysql://192.168.60.130:3306/sso_right?useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="user" value="siyu" />
+		<property name="password" value="111111" />-->
+
 		<property name="initialPoolSize" value="${pool.initialPoolSize}" />
 		<property name="minPoolSize" value="${pool.minPoolSize}" />
 		<property name="maxPoolSize" value="${pool.maxPoolSize}" />
@@ -25,6 +31,11 @@
 	</bean>
 
 	<bean id="sessionFactory"
+
+
+
+
+
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="packagesToScan" value="tv.acframework.oss.boss.entity" />
