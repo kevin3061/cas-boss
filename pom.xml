@@ -26,7 +26,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<modules>
 		<module>ac-oss-boss-core</module>
 		<module>ac-oss-boss-server</module>
@@ -46,7 +46,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>ac-releases</id>

@@ -16,7 +16,7 @@
 
 <!-- start of header -->
 <div class="header clearfix">
-	<h1><a class="LOGO" href="#">OSS平台</a></h1>
+    <h1><a href="javaScript:;" id="titleClick"><img src="../images/control_panel_logo.png" style="width:210px;margin-top:5px"/></a></h1>
     <div class="head_right">
     	<div class="head_top_link clearfix">
             <ul class="ul_head_top_link right">
@@ -30,7 +30,7 @@
 					</@authorize></#list>
                     </ul>
                 </li>
-                <li><a id="logout" href="logout">退出</a></li>
+                <li><a id="logout" href="javaScript:;" class="head_logout">退出</a></li>
             </ul>
         </div>
     	<div class="main_nav">
@@ -50,6 +50,15 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
+
+    $("#titleClick").click(function(){
+        window.parent.parent.location='/';
+    })
+
+    $(".head_logout").click(function(){
+        window.parent.parent.location='logout';
+    })
+
      $("a.showmenu").each(function () {
          $(this).bind("click",function(){
          	 var id = $(this).attr("id");

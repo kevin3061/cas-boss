@@ -9,7 +9,7 @@
 <body>
 <!-- start of footer -->
 <div class="footer">
-	<p>深圳XXX有限公司</p>
+	<p>广州弹幕网络科技有限公司北京分公司</p>
 </div>
 <!-- end of footer -->
 </body>

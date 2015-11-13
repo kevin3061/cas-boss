@@ -33,7 +33,7 @@ function gotoPassword() {
 <body>
 <!-- start of header -->
 <div class="header clearfix">
-    <h1><a class="LOGO" href="/main">OSS平台</a></h1>
+    <h1><a href="/main"><img src="../images/control_panel_logo.png" style="width:260px"/></a></h1>
     <div class="head_top_link clearfix">
         <ul class="ul_head_top_link right">
             <li><span class="name">${(CAS_USER.realname)!}</span></li>
@@ -76,7 +76,7 @@ function gotoPassword() {
     
     <!-- start of footer -->
     <div class="footer">
-        <p>Copyright © 2012-2013 深圳XXX有限公司 版权所有</p>
+        <p>Copyright © 2012-2016 广州弹幕网络科技有限公司北京分公司 版权所有</p>
     </div>
     <!-- end of footer -->
 </div>

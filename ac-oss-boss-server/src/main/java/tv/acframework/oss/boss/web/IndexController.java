@@ -48,7 +48,7 @@ public class IndexController {
 	public String logout(Model model, HttpServletRequest request) throws Exception {
 		String casServer = PropertyConfigurer.getValue(CasPropertiesConfig.CAS_SERVER);
 		String serverName = PropertyConfigurer.getValue(CasPropertiesConfig.SERVER_NAME);
-		String logoutUrl = casServer + "/logout?service=" + serverName + "/boss";
+		String logoutUrl = casServer + "/logout?service=" + serverName + "/";
 		
 		request.getSession().removeAttribute(CasFilter.SESSION_USER_KEY);
 		request.getSession().removeAttribute(BossFilter.SESSION_RTS_KEY);
