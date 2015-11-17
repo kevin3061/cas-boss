@@ -47,6 +47,17 @@
 				<prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
 				<prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop>
 				<prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop>
+
+				<prop key="hibernate.autoReconnect">true</prop>
+
+				<!--
+				<prop key="testOnBorrow">true</prop>
+				<prop key="testOnReturn">true</prop>
+				<prop key="testWhileIdle">true</prop>
+				<prop key="validationQuery">SELECT 1</prop>
+				<prop key="timeBetweenEvictionRunsMillis">10000</prop>
+				<prop key="minEvictableIdleTimeMillis">10000</prop>
+				-->
 				<!-- 
 				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
 				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
